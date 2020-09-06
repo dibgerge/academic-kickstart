@@ -1,0 +1,27 @@
+{{- define "main" -}}
+
+{{ partial "page_header.html" . }}
+
+
+<div class="container">
+  <div class="margin-auto">
+      <div class="center-text">
+          {{ with .Title }}<h1 class="mt-0">{{ . | markdownify }}</h1>{{ end }}
+          {{ with .Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+      </div>
+      {{ with .Content }}
+      <div class="article-style" itemprop="articleBody">{{ . }}</div>
+    {{ end }}
+    <div>
+    <div class="row js-layout-row">
+    {{ range .Sections }}
+        {{ partial "tutorial_li_card" . }}
+    {{ end }}
+    </div>
+    </div>
+  </div>
+
+  {{ partial "pagination" . }}
+</div>
+
+{{- end -}}

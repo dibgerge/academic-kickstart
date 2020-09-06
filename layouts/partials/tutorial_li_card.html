@@ -1,0 +1,31 @@
+{{/*  {{ $item := .item }}
+{{ $widget := .widget }}  */}}
+
+{{/*  {{ $link := .link }}
+{{ $target := .target }}  */}}
+
+{{ $item := "" }}
+{{ $widget := "" }}
+
+{{ $link := "" }}
+{{ $target := ""}}
+
+{{ $resource := (.Resources.ByType "image").GetMatch "*featured*" }}
+
+<div class="col-12 col-md-6 col-lg-4 project-item isotope-item">
+    <div class="card">
+      {{ with $resource }}
+        {{/*  {{ $image := .Resize (printf "550x q90 %s") }}  */}}
+        {{$image := .Resize "550x550"}}
+        <a href="{{ $.RelPermalink }}" {{ $target | safeHTMLAttr }} class="tutorial-card-image hover-overlay">
+          <img src="{{ .RelPermalink }}" alt="" class="img-responsive">
+        </a>
+      {{ end }}
+      <div class="card-text">
+        <h4><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ .Title }}</a></h4>
+        <div class="card-desription">
+            {{ with .Params.summary }}<p>{{ . | markdownify }}</p>{{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
