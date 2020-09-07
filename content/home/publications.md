@@ -10,6 +10,10 @@ weight = 90  # Order that this section will appear.
 title = "Recent Publications"
 subtitle = ""
 
+[design.spacing]
+  padding = ["30px", "0", "20px", "0"]
+
+
 [content]
   # Page type to display. E.g. post, talk, or publication.
   page_type = "publication"

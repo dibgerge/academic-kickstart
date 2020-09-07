@@ -8,6 +8,10 @@ weight = 65  # Order that this section will appear.
 title = "Previous Projects"
 subtitle = ""
 
+[design.spacing]
+  padding = ["20px", "0", "20px", "0"]
+
+
 [content]
   # Page type to display. E.g. project.
   page_type = "project"

@@ -8,6 +8,11 @@ weight = 50  # Order that this section will appear.
 title = "Accomplish&shy;ments"
 subtitle = ""
 
+[design.spacing]
+  # Customize the section spacing. Order is top, right, bottom, left.
+  padding = ["20px", "0", "30px", "0"]
+
+
 # Date format
 #   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
 date_format = "Jan 2006"

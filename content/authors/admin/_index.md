@@ -37,6 +37,11 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
+# Link to a PDF of your resume/CV from the About widget.
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+- icon: cv
+  icon_pack: ai
+  link: files/cv_gerges.pdf
 - icon: github
   icon_pack: fab
   link: https://github.com/dibgerge
@@ -49,11 +54,6 @@ social:
 - icon: stack-overflow
   icon_pack: fab
   link: https://stackoverflow.com/users/5495304/gerges-dib
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-- icon: cv
-  icon_pack: ai
-  link: files/cv_gerges.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
